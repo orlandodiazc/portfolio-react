@@ -1,6 +1,5 @@
-import Container from './Container'
+import Container from './Container.jsx'
 
-//bg-[#2d2f31
 export default function Contact() {
   return (
     <section className="bg-violet-800">

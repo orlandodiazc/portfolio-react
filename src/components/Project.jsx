@@ -1,4 +1,5 @@
 import { BsLink45Deg, BsGithub } from 'react-icons/bs'
+import PropTypes, { string } from 'prop-types'
 
 export default function Project({ project }) {
   return (
@@ -48,4 +49,16 @@ export default function Project({ project }) {
       </div>
     </article>
   )
+}
+
+Project.propTypes = {
+  project: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    image: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    technologies: PropTypes.arrayOf(string),
+    sourceLink: PropTypes.string.isRequired,
+    liveLink: PropTypes.string.isRequired
+  })
 }
