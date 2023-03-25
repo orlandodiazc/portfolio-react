@@ -3,23 +3,29 @@ import PropTypes, { string } from 'prop-types'
 
 export default function Project({ project }) {
   return (
-    <article className="shadow-[0_2px_6px_rgb(0,0,0,0.2)] rounded-xl bg-white">
-      <div className="flex items-center gap-6 py-6 px-8">
+    <article className="shadow-[0_2px_6px_rgb(0,0,0,0.2)] rounded-xl bg-white dark:bg-neutral-800 dark:text-white-100">
+      <div className="flex flex-col items-center sm:flex-row gap-6 py-4 px-3 sm:px-6 sm:py-5">
         <div
-          className={`flex w-[55%] aspect-[16/10] bg-red-900 ${
-            project.id % 2 === 0 ? '' : 'order-1'
+          className={`relative flex aspect-square sm:w-[55%] sm:aspect-[16/10] overflow-hidden rounded-xl shadow-[0_1px_6px_rgb(0,0,0,0.2)] ${
+            project.id % 2 === 0 ? '' : 'sm:order-1'
           }`}
         >
-          <img src={project.image} className="m-auto w-full" alt="Project screenshot" />
+          <img
+            src={project.image}
+            className={`m-auto absolute w-full  transition duration-[1000ms] ease-in-out hover:-translate-y-full`}
+            alt="Project screenshot"
+            width="100%"
+            height="auto"
+          />
         </div>
         <div className="flex-1 flex flex-col text-center justify-center">
-          <h3 className="uppercase">{project.name}</h3>
-          <p>{project.description}</p>
+          <h3 className="uppercase dark:text-white">{project.name}</h3>
+          <p className="dark:text-gray-300">{project.description}</p>
           <ul className="flex justify-center items-start flex-wrap gap-1 mb-5">
             {project.technologies.map((tech) => (
               <li
                 key={tech}
-                className="text-gray-900 text-sm p-1 rounded shadow-[0_2px_4px_rgb(0,0,0,0.2)]"
+                className="text-gray-900 dark:text-white text-sm px-2 py-1 rounded shadow-[0_2px_4px_rgb(0,0,0,0.2)]"
               >
                 {tech}
               </li>
@@ -28,7 +34,7 @@ export default function Project({ project }) {
           <div className="flex gap-2 justify-center">
             <button
               type="button"
-              className="border border-violet-900 border-opacity-50 px-4 py-1 rounded hover:bg-violet-900 hover:bg-opacity-10"
+              className="border border-violet-900 dark:border-violet-800 border-opacity-50 px-4 py-1 rounded hover:bg-violet-900 hover:bg-opacity-10"
             >
               <a className="flex items-center gap-2" href={project.sourceLink}>
                 <BsGithub size={22} />
@@ -37,7 +43,7 @@ export default function Project({ project }) {
             </button>
             <button
               type="button"
-              className="border border-violet-900 border-opacity-50 px-3 py-1 rounded hover:bg-violet-900 hover:bg-opacity-10"
+              className="border border-violet-900/50 dark:border-violet-800 px-3 py-1 rounded hover:bg-violet-900 hover:bg-opacity-10"
             >
               <a className="flex items-center gap-2" href={project.liveLink}>
                 <BsLink45Deg size={22} />

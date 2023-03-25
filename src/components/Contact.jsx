@@ -2,17 +2,17 @@ import Container from './Container.jsx'
 
 export default function Contact() {
   return (
-    <section className="bg-violet-800">
-      <Container className="py-16 text-gray-200">
-        <h2 className="uppercase text-amber-400 ">CONTACT</h2>
-        <p className="mb-6 font-bold text-gray-200 text-lg">
+    <section className="bg-violet-800 dark:bg-violet-900/50">
+      <Container className="pt-16 pb-8 text-gray-200 text-center">
+        <h2 className="uppercase text-amber-500 mb-4">CONTACT</h2>
+        <p className="mb-6 font-bold text-gray-200 text-lg hover:text-gray-100">
           If you have an application you are interested in developing, a feature that you need built
           or a project that needs coding. I’d love to assist you further.
         </p>
 
-        <form name="contact" method="post">
+        <form className="mb-6" name="contact" method="post">
           <input type="hidden" name="form-name" value="contact" />
-          <div className="grid gap-3 max-w-xl m-auto px-5">
+          <div className="grid gap-3 max-w-xl m-auto px-5 text-black">
             <input
               className="px-3 py-2 rounded-lg border border-violet-900 outline-violet-500"
               type="text"
@@ -32,7 +32,7 @@ export default function Contact() {
             />
             <textarea
               className="min-h-[2.7rem] mb-5 px-3 py-2 rounded-lg border border-gray-500 outline-violet-500"
-              name="msg"
+              name="message"
               rows="4"
               maxLength="500"
               id="user_message"
@@ -40,13 +40,22 @@ export default function Contact() {
               required
             ></textarea>
             <button
-              className="m-auto px-4 py-2 font-bold  rounded-lg bg-amber-400 outline outline-2 outline-amber-400  hover:bg-transparent"
+              className="m-auto px-4 py-2 font-bold text-gray-200 rounded-lg bg-green-800 outline outline-0 hover:outline-1"
               type="submit"
             >
               Get In Touch
             </button>
           </div>
         </form>
+        <p className="text-gray-100 font-bold text-md">
+          You can also contact me at{': '}
+          <a
+            className="text-amber-500 underline underline-offset-4"
+            href="mailto:orlandodiazconde@gmail.com"
+          >
+            orlandodiazconde@gmail.com
+          </a>
+        </p>
       </Container>
     </section>
   )
