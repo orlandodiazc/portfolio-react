@@ -56,5 +56,3 @@ export default function TechStack() {
     </section>
   )
 }
-
-// transform hover:scale-125 ease-in-out duration-150

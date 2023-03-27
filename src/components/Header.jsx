@@ -1,7 +1,7 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { MdMenu, MdClose, MdLightMode, MdDarkMode } from 'react-icons/md'
 import * as Switch from '@radix-ui/react-switch'
-import { useEffect } from 'react'
+import PropTypes from 'prop-types'
 
 const navigation = [
   { name: 'Home', href: '#home', current: true },
@@ -103,4 +103,8 @@ export default function Header({ initialThemeValue }) {
       </nav>
     </header>
   )
+}
+
+Header.propTypes = {
+  initialThemeValue: PropTypes.bool.isRequired
 }

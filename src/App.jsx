@@ -1,5 +1,3 @@
-import { useEffect } from 'react'
-
 import Header from './components/Header.jsx'
 import Hero from './components/Hero.jsx'
 import Portfolio from './components/Portfolio.jsx'

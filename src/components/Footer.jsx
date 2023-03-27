@@ -1,5 +1,5 @@
 import { BsGithub, BsLinkedin } from 'react-icons/bs'
-import Container from './Container'
+import Container from './Container.jsx'
 
 export default function Footer() {
   return (
