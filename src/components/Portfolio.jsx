@@ -35,7 +35,7 @@ const MOCK_PROJECTS = [
 
 export default function Portfolio() {
   return (
-    <section className="bg-neutral-100 dark:bg-neutral-900 dark:text-gray-100">
+    <section id="projects" className="bg-neutral-100 dark:bg-neutral-900 dark:text-gray-100">
       <Container className="py-16">
         <h2 className="uppercase dark:text-violet-500">PORTFOLIO</h2>
         <p className="mb-6 font-bold text-lg font-mono dark:text-gray-100">

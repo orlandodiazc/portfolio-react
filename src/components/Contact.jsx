@@ -2,7 +2,7 @@ import Container from './Container.jsx'
 
 export default function Contact() {
   return (
-    <section className="bg-violet-800 dark:bg-violet-900/50">
+    <section id="contact" className="bg-violet-800 dark:bg-violet-900/50">
       <Container className="pt-16 pb-8 text-gray-200 text-center">
         <h2 className="uppercase text-amber-500 mb-4">CONTACT</h2>
         <p className="mb-6 font-bold text-gray-200 text-lg hover:text-gray-100">
