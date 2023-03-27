@@ -6,13 +6,13 @@ export default function Project({ project }) {
     <article className="shadow-[0_2px_6px_rgb(0,0,0,0.2)] rounded-xl bg-white dark:bg-neutral-800 dark:text-white-100">
       <div className="flex flex-col items-center sm:flex-row gap-6 py-4 px-3 sm:px-6 sm:py-5">
         <div
-          className={`relative flex aspect-square sm:w-[55%] sm:aspect-[16/10] overflow-hidden rounded-xl shadow-[0_1px_6px_rgb(0,0,0,0.2)] ${
+          className={`flex aspect-[16/10] sm:w-[55%] overflow-hidden rounded-xl shadow-[0_1px_6px_rgb(0,0,0,0.2)] ${
             project.id % 2 === 0 ? '' : 'sm:order-1'
           }`}
         >
           <img
             src={project.image}
-            className={`m-auto absolute w-full  transition duration-[1000ms] ease-in-out hover:-translate-y-full`}
+            className="m-auto w-full"
             alt="Project screenshot"
             width="100%"
             height="auto"
