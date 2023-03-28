@@ -18,8 +18,8 @@ export default function TechStack() {
     <section className="bg-neutral-100 dark:bg-neutral-900">
       <Container className="pb-16 pt-8">
         <h2 className="mb-5 uppercase dark:text-violet-500">TECH STACK</h2>
-        <div className="flex flex-col md:flex-row gap-3 items-center mb-8">
-          <h3 className="text-center text-gray-800 dark:text-gray-100 border-b-2 py-2 md:border-b-0 md:border-r-2 border-gray-900 dark:border-gray-200 md:mr-3 md:py-1 w-[15ch]">
+        <div className="flex flex-col md:flex-row items-center mb-8">
+          <h3 className="text-base text-center text-gray-800 dark:text-gray-100 md:mb-0 border-b-2 py-2 md:border-b-0 md:border-r-2 border-gray-900 dark:border-gray-200 md:mr-3 md:py-1 w-[20ch]">
             Front-end
           </h3>
           <ul className="flex gap-6 ml-3 justify-center md:justify-start items-center flex-wrap">
@@ -41,10 +41,10 @@ export default function TechStack() {
           </ul>
         </div>
         <div className="flex flex-col md:flex-row items-center justify-center md:justify-start">
-          <h3 className="text-center text-gray-800 dark:text-gray-100  border-b-2 py-2 md:border-b-0 md:border-r-2 border-gray-900 dark:border-gray-200 md:mr-3 md:py-1 w-[15ch]">
-            Tools
+          <h3 className="text-base text-center text-gray-800 dark:text-gray-100 md:mb-0 border-b-2 py-2 md:border-b-0 md:border-r-2 border-gray-900 dark:border-gray-200 md:mr-3 md:py-1 w-[20ch]">
+            Tools and Methods
           </h3>
-          <ul className="flex flex-wrap gap-3 md:gap-6 md:ml-6 items-center justify-center tracking-wide text-gray-600 dark:text-gray-300">
+          <ul className="flex flex-wrap gap-3 md:gap-6 md:ml-3 items-center justify-center tracking-wide text-gray-600 dark:text-gray-300">
             <li>Git</li>
             <li>Responsive Development</li>
             <li>Gitflow</li>
