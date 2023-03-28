@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="h-screen min-h-[24rem] bg-[url('/hero-bg.svg')] dark:bg-none relative overflow-hidden"
+      className="h-screen min-h-[24rem] bg-[url('/hero-bg.svg')] dark:bg-none relative overflow-hidden pt-14"
     >
       <div className="hidden dark:block absolute blur-3xl -left-36 -top-24 opacity-10 bg-violet-900 w-64 h-64 rounded-3xl"></div>
       <div className="hidden dark:block absolute blur-3xl -right-40 -top-40 opacity-10 bg-violet-900 w-80 h-80 rounded-3xl"></div>
@@ -13,7 +13,7 @@ export default function Hero() {
       <Container className="h-full flex flex-col justify-center text-gray-900 dark:text-gray-100 ">
         <div className="flex flex-col text-center items-center sm:items-start sm:text-left">
           <div>
-            <h1 className="text-5xl sm:text-6xl">
+            <h1 className="text-5xl sm:text-6xl leading-tight">
               Hey There! <br />
               I'm Orlando Diaz
             </h1>

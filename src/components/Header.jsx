@@ -35,7 +35,7 @@ export default function Header({ initialThemeValue }) {
               <span className="mt-1">ORLANDO.DEV</span>
             </a>
             <div className="flex gap-12 items-center">
-              <div className="hidden sm:flex gap-10">
+              <div className="hidden md:flex gap-10">
                 <ul className="flex gap-8 items-center">
                   {navigation.map((item) => {
                     return (
@@ -65,20 +65,20 @@ export default function Header({ initialThemeValue }) {
             </div>
             <button
               type="button"
-              className="sm:hidden"
+              className="md:hidden"
               onClick={() => setOpen((prevState) => !prevState)}
             >
               <span className="sr-only">Open navigation menu</span>
               {open ? (
-                <MdClose aria-hidden="true" size={24} />
+                <MdClose aria-hidden="true" size={36} />
               ) : (
-                <MdMenu aria-hidden="true" size={24} />
+                <MdMenu aria-hidden="true" size={36} />
               )}
             </button>
           </div>
           {open && (
             <div className="flex flex-col items-center">
-              <ul className="flex flex-col items-center gap-4 pb-4 sm:hidden">
+              <ul className="flex flex-col items-center gap-4 pb-4 md:hidden">
                 {navigation.map((item) => {
                   return (
                     <li key={item.name} className="flex hover:text-violet-900">
