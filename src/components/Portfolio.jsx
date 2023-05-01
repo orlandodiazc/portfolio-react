@@ -19,7 +19,7 @@ const MOCK_PROJECTS = [
       'SPA that allows you to browse upcoming SpaceX missions, select your preferred one, and reserve your spot with just a few clicks.',
     technologies: ['React', 'Jest', 'React Testing Library', 'Bootstrap'],
     liveLink: 'https://lighthearted-sfogliatella-77e09a.netlify.app/',
-    sourceLink: 'https://github.com/orlandodiazc/event-reversations'
+    sourceLink: 'https://github.com/orlandodiazc/event-reservations'
   },
   {
     id: 2,
