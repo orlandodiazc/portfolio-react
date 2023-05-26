@@ -3,7 +3,7 @@ import { MdMenu, MdClose, MdLightMode, MdDarkMode } from 'react-icons/md'
 import * as Switch from '@radix-ui/react-switch'
 import PropTypes from 'prop-types'
 
-const navigation = [
+const defaultNavigation = [
   { name: 'Home', href: '#home', current: true },
   { name: 'Projects', href: '#projects', current: false },
   { name: 'Contact', href: '#contact', current: false }
@@ -12,6 +12,7 @@ const navigation = [
 export default function Header({ initialThemeValue }) {
   const [open, setOpen] = useState(false)
   const [isDarkMode, setDarkMode] = useState(initialThemeValue)
+  const [navigation, setNavigation] = useState(defaultNavigation)
 
   useEffect(() => {
     if (isDarkMode) {
@@ -25,8 +26,9 @@ export default function Header({ initialThemeValue }) {
     setDarkMode((prev) => !prev)
   }
 
+  console.log(navigation)
   return (
-    <header className="bg-white dark:bg-neutral-900 dark:text-gray-100 fixed w-full z-10">
+    <header className="bg-neutral-100 dark:bg-neutral-900 dark:text-gray-100 fixed w-full z-10">
       <nav className="text-xl shadow">
         <div className="max-w-5xl m-auto px-2">
           <div className="flex justify-between h-14 items-center">
@@ -36,14 +38,27 @@ export default function Header({ initialThemeValue }) {
             </a>
             <div className="flex gap-12 items-center">
               <div className="hidden md:flex gap-10">
-                <ul className="flex gap-8 items-center">
+                <ul className="flex gap-5 items-center">
                   {navigation.map((item) => {
                     return (
-                      <li key={item.name} className="font-mono mt-1">
+                      <li
+                        key={item.name}
+                        className={`font-mono mt-1 grid place-content-center px-2 py-1 rounded ${
+                          item.current ? 'bg-neutral-400/50' : ''
+                        }`}
+                      >
                         <a
-                          className="hover:text-violet-700 dark:hover:text-violet-900"
+                          className="hover:text-violet-700"
                           href={item.href}
-                          aria-current={item.current ? 'section' : undefined}
+                          onClick={() => {
+                            setNavigation((prev) =>
+                              prev.map((navLink) =>
+                                navLink.href === item.href
+                                  ? { ...navLink, current: true }
+                                  : { ...navLink, current: false }
+                              )
+                            )
+                          }}
                         >
                           {item.name}
                         </a>

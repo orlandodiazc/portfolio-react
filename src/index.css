@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply scroll-pt-14 scroll-smooth;
+  }
   h1 {
     @apply font-bold tracking-tight text-4xl mb-2;
   }
