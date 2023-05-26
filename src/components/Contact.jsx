@@ -40,7 +40,7 @@ export default function Contact() {
               required
             ></textarea>
             <button
-              className="m-auto px-4 pb-2 pt-3 font-bold text-gray-200 rounded-lg bg-green-800 outline outline-0 hover:outline-1"
+              className="mx-auto grid place-content-center px-5 py-3 font-bold text-gray-200 rounded-lg bg-green-800 outline outline-0 hover:outline-1"
               type="submit"
             >
               Get In Touch

@@ -1,5 +1,6 @@
 import Container from './Container.jsx'
-import { BsLinkedin, BsGithub } from 'react-icons/bs'
+import { BsGithub } from 'react-icons/bs'
+import { BiMailSend } from 'react-icons/bi'
 
 export default function Hero() {
   return (
@@ -17,10 +18,10 @@ export default function Hero() {
               Hey There! <br />
               I'm Orlando Diaz
             </h1>
-            <h2 className="text-2xl font-sans  text-violet-900 dark:text-violet-500 sm:text-4xl mb-4">
+            <h2 className="text-2xl font-sans  text-violet-900 dark:text-violet-500 sm:text-4xl mb-4 tracking-normal">
               Front End Developer
             </h2>
-            <p className="max-w-[64ch] dark:text-gray-200">
+            <p className="max-w-[64ch] dark:text-gray-200 mb-2">
               I can help you build a product, feature, or website. Please look through some of my
               work and experience. If you like what you see and have a project you need to be coded,
               don't hesitate to contact me.
@@ -28,13 +29,16 @@ export default function Hero() {
           </div>
           <ul className="flex gap-3 items-center">
             <li>
-              <a href="https://www.linkedin.com/in/orlando-diaz-conde">
-                <BsLinkedin size={24} className="hover:text-violet-900 hover:text-opacity-70" />
+              <a href="https://github.com/orlandodiazc">
+                <BsGithub size={24} className="hover:text-violet-700 dark:hover:text-violet-900" />
               </a>
             </li>
             <li>
-              <a href="https://github.com/orlandodiazc">
-                <BsGithub size={24} className="hover:text-violet-900 hover:text-opacity-70" />
+              <a href="mailto:orlandodiazconde@gmail.com">
+                <BiMailSend
+                  size={26}
+                  className="hover:text-violet-700 dark:hover:text-violet-900 mt-[3px]"
+                />
               </a>
             </li>
           </ul>

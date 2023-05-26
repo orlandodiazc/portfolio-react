@@ -34,7 +34,7 @@ export default function Project({ project }) {
           <div className="flex gap-2 justify-center">
             <button
               type="button"
-              className="border border-violet-900 dark:border-violet-800 border-opacity-50 px-4 py-1 rounded hover:bg-violet-900 hover:bg-opacity-10"
+              className="border border-violet-900 dark:border-violet-800 border-opacity-50 px-4 py-1 rounded hover:bg-violet-900 dark:hover:bg-opacity-30 hover:bg-opacity-10"
             >
               <a className="flex items-center gap-2" href={project.sourceLink}>
                 <BsGithub size={22} />
@@ -43,7 +43,7 @@ export default function Project({ project }) {
             </button>
             <button
               type="button"
-              className="border border-violet-900/50 dark:border-violet-800 px-3 py-1 rounded hover:bg-violet-900 hover:bg-opacity-10"
+              className="border border-violet-900/50 dark:border-violet-800 px-3 py-1 rounded hover:bg-violet-900 dark:hover:bg-opacity-30 hover:bg-opacity-10"
             >
               <a className="flex items-center gap-2" href={project.liveLink}>
                 <BsLink45Deg size={22} />

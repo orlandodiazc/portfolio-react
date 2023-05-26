@@ -7,10 +7,10 @@
     @apply font-bold tracking-tight text-4xl mb-2;
   }
   h2 {
-    @apply mb-2 text-violet-900 font-extrabold text-xl font-mono;
+    @apply mb-2 text-violet-900 font-extrabold text-3xl md:text-4xl font-mono tracking-tight;
   }
   h3 {
-    @apply text-lg font-bold text-gray-700 mb-3 font-mono;
+    @apply text-xl font-bold text-gray-700 mb-3 font-mono;
   }
   p {
     @apply mb-4 text-gray-700 text-lg;

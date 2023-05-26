@@ -41,7 +41,7 @@ export default function Header({ initialThemeValue }) {
                     return (
                       <li key={item.name} className="font-mono mt-1">
                         <a
-                          className="hover:text-violet-900"
+                          className="hover:text-violet-700 dark:hover:text-violet-900"
                           href={item.href}
                           aria-current={item.current ? 'section' : undefined}
                         >
@@ -55,7 +55,7 @@ export default function Header({ initialThemeValue }) {
                   <Switch.Root
                     onCheckedChange={handleToggle}
                     checked={isDarkMode}
-                    className="w-[42px] h-[25px] bg-violet-900/40 rounded-full relative shadow-[0_0_4px_rgb(0,0,0,0.2)] focus:shadow-[0px_1px_2px_rgb(0,0,0,1)] dark:focus:shadow-gray-600 data-[state=checked]:bg-gray-800 outline-none cursor-default"
+                    className="w-[42px] h-[25px] bg-violet-900/40 rounded-full relative shadow-[0_0_4px_rgb(0,0,0,0.2)] focus:shadow-[0px_1px_2px_rgb(0,0,0,1)] dark:focus:shadow-gray-600 data-[state=checked]:bg-gray-800 outline-none"
                   >
                     <Switch.Thumb className="block w-[21px] h-[21px] bg-white rounded-full shadow-[0_1px_1px] transition-transform duration-100 translate-x-0.5 will-change-transform data-[state=checked]:translate-x-[19px]" />
                   </Switch.Root>
@@ -87,13 +87,13 @@ export default function Header({ initialThemeValue }) {
                   )
                 })}
               </ul>
-              <div className="flex gap-1 items-center mb-5">
+              <div className="flex gap-1 items-center mb-5 cursor-pointer">
                 <Switch.Root
                   onCheckedChange={handleToggle}
                   checked={isDarkMode}
-                  className="w-[42px] h-[25px] bg-violet-900/40 rounded-full relative shadow-[0_0_4px_rgb(0,0,0,0.2)] focus:shadow-[0_0_0_1px_rgb(0,0,0,0.5] data-[state=checked]:bg-gray-800 outline-none cursor-default"
+                  className="w-[42px] h-[25px] bg-violet-900/40 rounded-full relative shadow-[0_0_4px_rgb(0,0,0,0.2)] focus:shadow-[0_0_0_1px_rgb(0,0,0,0.5] data-[state=checked]:bg-gray-800 outline-none "
                 >
-                  <Switch.Thumb className="block w-[21px] h-[21px] bg-white rounded-full shadow-[0_1px_1px] transition-transform duration-100 translate-x-0.5 will-change-transform data-[state=checked]:translate-x-[19px]" />
+                  <Switch.Thumb className="block w-[21px] h-[21px] bg-white rounded-full shadow-[0_1px_1px] transition-transform duration-100 translate-x-0.5 will-change-transform data-[state=checked]:translate-x-[19px] " />
                 </Switch.Root>
                 {isDarkMode ? <MdDarkMode /> : <MdLightMode />}
               </div>
