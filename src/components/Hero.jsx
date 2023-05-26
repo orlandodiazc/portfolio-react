@@ -8,9 +8,11 @@ export default function Hero() {
       id="home"
       className="h-screen min-h-[24rem] bg-[url('/hero-bg.svg')] dark:bg-none relative overflow-hidden pt-14"
     >
-      <div className="hidden dark:block absolute blur-3xl -left-36 -top-24 opacity-10 bg-violet-900 w-64 h-64 rounded-3xl"></div>
-      <div className="hidden dark:block absolute blur-3xl -right-40 -top-40 opacity-10 bg-violet-900 w-80 h-80 rounded-3xl"></div>
-      <div className="hidden dark:block absolute blur-3xl -right-36 -bottom-44 opacity-5 bg-violet-900 w-96 h-96 rounded-3xl"></div>
+      <div className="blur-6xl w-3/4 aspect-square -translate-y-1/2 opacity-20 hidden dark:block absolute  bg-violet-900  rounded-full"></div>
+      <div className="blur-6xl w-96 aspect-square right-0 bottom-0 translate-y-1/2 translate-x-1/2 opacity-70 hidden dark:block absolute  bg-green-900  rounded-full"></div>
+      {/* <div className="hidden dark:block absolute blur-3xl right-0 top-0 opacity-20 bg-violet-900 w-80 h-80 rounded-3xl"></div>
+      <div className="hidden dark:block absolute blur-3xl right-0 bottom-0 opacity-20 bg-violet-900 w-96 h-96 rounded-3xl"></div>
+      <div className="hidden dark:block absolute blur-3xl inset-52 opacity-25 bg-violet-900 h-100 aspect-square rounded-3xl"></div> */}
       <Container className="h-full flex flex-col justify-center text-gray-900 dark:text-gray-100 ">
         <div className="flex flex-col text-center items-center sm:items-start sm:text-left">
           <div>
