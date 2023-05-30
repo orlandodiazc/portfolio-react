@@ -28,8 +28,8 @@ export default function Header({ initialThemeValue }) {
 
   console.log(navigation)
   return (
-    <header className="bg-neutral-100 dark:bg-neutral-900 dark:text-gray-100 fixed w-full z-10">
-      <nav className="text-xl shadow">
+    <header className="bg-neutral-100 dark:bg-neutral-900/80 backdrop-blur-[3px] dark:text-gray-100 fixed w-full z-10">
+      <nav className="text-xl shadow-sm dark:shadow-none">
         <div className="max-w-5xl m-auto px-2">
           <div className="flex justify-between h-14 items-center">
             <a className="flex items-center gap-2 font-mono font-bold" href="/">
