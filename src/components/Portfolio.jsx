@@ -4,6 +4,15 @@ import Project from './Project.jsx'
 const MOCK_PROJECTS = [
   {
     id: 0,
+    name: 'Tic-Tac-Toe',
+    image: '/portfolio/tic-tac-toe.png',
+    description: 'Play Tic Tac Toe games vs. a CPU or another player in this SPA',
+    technologies: ['React', 'TypeScript', 'TailwindCSS'],
+    liveLink: 'https://tic-tac-toe-orlando.vercel.app/',
+    sourceLink: 'https://github.com/orlandodiazc/tic-tac-toe_ts'
+  },
+  {
+    id: 1,
     name: 'Air-Pollution-Stats',
     image: '/portfolio/air-pollution.png',
     description: 'Weather app where you can browse air pollution statistics for any location.',
@@ -12,7 +21,7 @@ const MOCK_PROJECTS = [
     sourceLink: 'https://github.com/orlandodiazc/air-pollution-stats'
   },
   {
-    id: 1,
+    id: 2,
     name: 'Space-Travelers',
     image: '/portfolio/space-travelers.png',
     description:
@@ -22,7 +31,7 @@ const MOCK_PROJECTS = [
     sourceLink: 'https://github.com/orlandodiazc/event-reservations'
   },
   {
-    id: 2,
+    id: 3,
     name: 'Mathematicians',
     image: '/portfolio/mathematicians.png',
     description:

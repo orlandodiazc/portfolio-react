@@ -12,7 +12,7 @@ export default function Project({ project }) {
         >
           <img
             src={project.image}
-            className="m-auto w-full"
+            className="m-auto h-full"
             alt="Project screenshot"
             width="100%"
             height="auto"
