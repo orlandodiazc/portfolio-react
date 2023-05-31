@@ -26,29 +26,23 @@ export default function Header({ initialThemeValue }) {
     setDarkMode((prev) => !prev)
   }
 
-  console.log(navigation)
   return (
-    <header className="bg-neutral-100 dark:bg-neutral-900/80 backdrop-blur-[3px] dark:text-gray-100 fixed w-full z-10">
-      <nav className="text-xl shadow-sm dark:shadow-none">
+    <header className="bg-white border-b text-neutral-900/80 dark:border-none dark:bg-neutral-900/80 backdrop-blur-[3px] dark:text-gray-100/80 fixed w-full z-10">
+      <nav className="text-xl">
         <div className="max-w-5xl m-auto px-2">
           <div className="flex justify-between h-14 items-center">
             <a className="flex items-center gap-2 font-mono font-bold" href="/">
               <img width="40px" height="auto" src="/logo.png" alt="Bird Logo" />{' '}
-              <span className=" mt-1">ORLANDO.DEV</span>
+              <span className="mt-1 text-black dark:text-neutral-200">ORLANDO.DEV</span>
             </a>
             <div className="flex gap-12 items-center">
               <div className="hidden md:flex gap-10">
                 <ul className="flex gap-5 items-center">
                   {navigation.map((item) => {
                     return (
-                      <li
-                        key={item.name}
-                        className={`font-mono mt-1 grid place-content-center px-2 py-1 rounded ${
-                          item.current ? 'bg-neutral-400/50' : ''
-                        }`}
-                      >
+                      <li key={item.name} className={'font-mono mt-1 grid place-content-center'}>
                         <a
-                          className="hover:text-violet-700"
+                          className="hover:text-black dark:hover:text-white"
                           href={item.href}
                           onClick={() => {
                             setNavigation((prev) =>

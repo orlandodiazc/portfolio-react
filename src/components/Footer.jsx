@@ -3,7 +3,7 @@ import Container from './Container.jsx'
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 dark:bg-violet-900/20 py-6">
+    <footer className="bg-slate-900/95 py-6">
       <Container className="flex flex-col sm:flex-row gap-4 sm:gap-0 items-center justify-between">
         <p className="mb-0 mt-[5px] text-sm tracking-wide text-center text-gray-100 hover:text-white">
           Built using React, TailwindCSS and RadixUI, 2023.
